@@ -1,4 +1,3 @@
-
 {
   "name": "flowia-site",
   "version": "1.0.0",
@@ -9,12 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "lucide-react": "^0.279.0",
     "next": "14.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "lucide-react": "^0.279.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
     "typescript": "^5.0.0"
   }
 }
