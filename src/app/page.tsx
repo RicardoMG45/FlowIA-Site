@@ -4,21 +4,38 @@ import { MoveRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-neutral-900 via-black to-neutral-950 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-20 font-sans">
-        {/* Hero */}
-        <section className="text-center mb-24">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Automatiza tus procesos <br className="hidden md:block" />
-            con inteligencia artificial
-          </h1>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto mb-8">
-            FlowIA potencia pequeños negocios conectando herramientas como WhatsApp, Instagram, Facebook y más.
-          </p>
-          <Button className="text-base gap-2">
-            Contáctanos <MoveRight className="w-4 h-4" />
+    <main className="min-h-screen bg-gradient-to-br from-neutral-950 to-black text-white flex items-center justify-center">
+      <div className="max-w-4xl mx-auto px-6 py-24 text-center">
+        {/* Título animado */}
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="text-4xl md:text-6xl font-bold leading-tight mb-6"
+        >
+          Dale inteligencia a tus procesos <br /> con FlowIA
+        </motion.h1>
+
+        {/* Subfrase */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="text-lg text-gray-400 max-w-xl mx-auto mb-10"
+        >
+          Conecta tus canales, responde más rápido y escala sin esfuerzo.
+        </motion.p>
+
+        {/* Botón CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+        >
+          <Button className="text-base px-6 py-3 gap-2">
+            Empezar ahora <MoveRight className="w-4 h-4" />
           </Button>
-        </section>
+        </motion.div>
 
         {/* Servicios */}
         <section className="mb-24">
