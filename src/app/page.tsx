@@ -1,58 +1,69 @@
-
-import React from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-neutral-800">
-      <section className="flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-br from-[#EFF2F5] to-white text-center">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight max-w-4xl">
-          Automatización inteligente para <span className="text-primary">pequeñas empresas</span>
-        </h1>
-        <p className="mt-6 text-lg md:text-xl max-w-2xl text-neutral-600">
-          Creamos soluciones con inteligencia artificial para ahorrar tiempo y mejorar tu operación diaria.
-        </p>
-        <Button className="mt-8 text-lg px-8 py-6">
-          Conoce nuestros planes <MoveRight className="ml-2" />
-        </Button>
-      </section>
+    <main className="min-h-screen bg-gradient-to-b from-neutral-900 via-black to-neutral-950 text-white">
+      <div className="max-w-6xl mx-auto px-6 py-20 font-sans">
+        {/* Hero */}
+        <section className="text-center mb-24">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            Automatiza tus procesos <br className="hidden md:block" />
+            con inteligencia artificial
+          </h1>
+          <p className="text-gray-400 text-lg max-w-xl mx-auto mb-8">
+            FlowIA potencia pequeños negocios conectando herramientas como WhatsApp, Instagram, Facebook y más.
+          </p>
+          <Button className="text-base gap-2">
+            Contáctanos <MoveRight className="w-4 h-4" />
+          </Button>
+        </section>
 
-      <section className="px-6 py-24 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-          <Card className="shadow-xl border border-neutral-200">
-            <CardContent className="p-6">
-              <h2 className="text-xl font-semibold mb-2">Automatiza tus pedidos</h2>
-              <p className="text-neutral-600 text-base">
-                Conecta WhatsApp, Instagram y Facebook para gestionar automáticamente tus pedidos y generar reportes.
-              </p>
-            </CardContent>
-          </Card>
+        {/* Servicios */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-semibold text-center mb-12">¿Qué hace FlowIA?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="bg-neutral-800 text-white shadow-lg rounded-2xl">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">Automatización con IA</h3>
+                <p className="text-sm text-gray-400">
+                  Conectamos tus canales digitales con procesos inteligentes y GPT para responder y organizar tareas.
+                </p>
+              </CardContent>
+            </Card>
 
-          <Card className="shadow-xl border border-neutral-200">
-            <CardContent className="p-6">
-              <h2 className="text-xl font-semibold mb-2">Integraciones inteligentes</h2>
-              <p className="text-neutral-600 text-base">
-                Integramos tus apps favoritas como Google Sheets, Notion, ChatGPT, CRMs y más.
-              </p>
-            </CardContent>
-          </Card>
+            <Card className="bg-neutral-800 text-white shadow-lg rounded-2xl">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">Flujos Personalizados</h3>
+                <p className="text-sm text-gray-400">
+                  Automatizamos pedidos, respuestas y seguimientos desde Instagram, WhatsApp y más.
+                </p>
+              </CardContent>
+            </Card>
 
-          <Card className="shadow-xl border border-neutral-200">
-            <CardContent className="p-6">
-              <h2 className="text-xl font-semibold mb-2">IA para responder y clasificar</h2>
-              <p className="text-neutral-600 text-base">
-                Usa IA para clasificar mensajes, responder automáticamente o tomar decisiones inteligentes.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            <Card className="bg-neutral-800 text-white shadow-lg rounded-2xl">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">Escalabilidad</h3>
+                <p className="text-sm text-gray-400">
+                  Desde tiendas locales hasta empresas en expansión, adaptamos la automatización a tu ritmo.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
-      <footer className="py-12 text-center border-t border-neutral-200 text-sm text-neutral-500">
-        © 2025 FlowIA. Todos los derechos reservados.
-      </footer>
+        {/* CTA */}
+        <section className="text-center">
+          <h2 className="text-3xl font-semibold mb-4">¿Listo para comenzar?</h2>
+          <p className="text-gray-400 mb-6">
+            Agenda una llamada con nosotros y descubre cómo FlowIA puede ayudarte a crecer.
+          </p>
+          <Button className="text-base gap-2">
+            Agenda tu consulta <MoveRight className="w-4 h-4" />
+          </Button>
+        </section>
+      </div>
     </main>
   );
 }
