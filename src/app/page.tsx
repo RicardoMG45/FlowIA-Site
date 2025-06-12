@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="h-screen bg-gradient-to-br from-neutral-950 to-black text-white flex items-center justify-center">
+    <main className="h-screen flex items-center justify-center bg-gradient-to-br from-neutral-950 to-black px-6">
       <div className="max-w-4xl mx-auto px-6 py-24 text-center">
         {/* Título animado */}
         <motion.h1
